@@ -28,5 +28,4 @@ void loop() {
     timer = micros();
     if(timer <= esc_timer)PORTD &= 11101111;
   }
-  while(timer - micros() < 4000);
 }
