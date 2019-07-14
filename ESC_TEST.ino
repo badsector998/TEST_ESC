@@ -26,6 +26,6 @@ void loop() {
   PORTD |= 00010000;
   while(PORTD >= 16){
     timer = micros();
-    if(timer <= esc_timer)PORTD &= 11101111;
+    if(timer >= esc_timer)PORTD &= 11101111;
   }
 }
